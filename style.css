@@ -1,0 +1,142 @@
+.mobile-menu {
+  transition: opacity 0.3s ease;
+}
+.mobile-menu.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.mobile-menu.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+header {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.header-transparent {
+  background-color: transparent;
+  color: white;
+}
+.header-solid {
+  background-color: white;
+  color: black;
+}
+
+.fade-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.newsBlock .mySwiper {
+  width: 100%;
+  height: 100%;
+  overflow: unset;
+}
+
+.finance_shadow-left {
+  z-index: 1;
+  background-image: linear-gradient(
+    90deg,
+    var(--color-gray-100) 90%,
+    #ffffff70
+  );
+
+  width: 50vw;
+  position: absolute;
+  inset: 0% auto 0% 0%;
+  transform: translate(-100%);
+}
+
+.finance_shadow-right {
+  z-index: 1;
+  background-image: linear-gradient(
+    270deg,
+    var(--color-gray-100) 90%,
+    #ffffff70
+  );
+  width: 50vw;
+  position: absolute;
+  inset: 0% 0% 0% auto;
+  transform: translate(100%);
+}
+
+/* .newsBlock .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      } */
+
+.newsBlock .swiper-pagination-bullet {
+  --swiper-pagination-bullet-inactive-color: rgba(34, 34, 34, 0.4);
+  --swiper-pagination-color: var(--color-blue-500);
+}
+
+.highlight {
+  position: relative;
+  background-position: left;
+  background-size: 0% 100%;
+  background-image: linear-gradient(
+    var(--color-blue-500),
+    var(--color-blue-500)
+  );
+  background-repeat: no-repeat;
+  transition: all 1s;
+  padding: 2px 8px;
+  margin: 0 3px;
+  color: var(--color-black);
+}
+
+.visible .highlight {
+  background-size: 100% 100%;
+  color: var(--color-white);
+}
+
+.bg-ing {
+  background-image: linear-gradient(
+    -225deg,
+    #22e1ff 0%,
+    #1d8fe1 48%,
+    #09e2ef 100%
+  );
+}
+
+.thumb-icon {
+  fill: var(--color-blue-500);
+  transition: fill 0.3s;
+}
+
+.fade-section .visible .thumb-icon {
+  animation: pop 0.4s ease forwards;
+  animation-delay: 1.5s;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4) rotate(-10deg);
+  }
+  70% {
+    transform: scale(1.2) rotate(10deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.thumb-icon {
+  transform-origin: center;
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear;
+}

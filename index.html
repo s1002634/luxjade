@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <title>聖玉科技</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style type="text/tailwindcss">
+      :root {
+        --color-violet-500: #27cdf2;
+        --color-black: #021226;
+        --color-gray-50: #f3f3f8;
+        --color-blue-200: #adf0ff;
+        --color-blue-600: #188fd9;
+        --color-blue-700: #0a5da6;
+        --color-blue-800: #084da6;
+        --swiper-navigation-size: 26px;
+        --swiper-navigation-color: var(--color-blue-500);
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800">
+    <header
+      id="navbar"
+      class="fixed top-0 left-0 w-full z-50 header-transparent"
+    >
+      <div
+        class="container mx-auto flex items-center justify-between px-4 py-3"
+      >
+        <img
+          src="logo.png"
+          alt="luxnova logo"
+          class="h-10 logo"
+          id="logo-normal"
+        />
+        <img
+          src="logo-dark.png"
+          alt="luxnova Logo"
+          class="h-10 logo hidden"
+          id="logo-dark"
+        />
+        <button id="menu-toggle" class="lg:hidden focus:outline-none text-2xl">
+          ☰
+        </button>
+        <nav
+          id="mobile-menu"
+          class="text-black hidden absolute top-16 right-0 bg-white lg:static lg:flex lg:bg-transparent lg:text-white space-y-4 lg:space-y-0 lg:space-x-4 p-4 lg:p-0"
+        >
+          <a
+            href="#news"
+            class="nav-link block lg:inline-block hover:text-blue-600"
+            >最新消息</a
+          >
+          <a
+            href="#about"
+            class="nav-link block lg:inline-block hover:text-blue-600"
+            >關於我們</a
+          >
+          <a
+            href="#product"
+            class="nav-link block lg:inline-block hover:text-blue-600"
+            >產品介紹</a
+          >
+          <a
+            href="#applicationFields"
+            class="nav-link block lg:inline-block hover:text-blue-600"
+            >應用場域與解決方案</a
+          >
+          <a
+            href="#customerCases"
+            class="nav-link block lg:inline-block hover:text-blue-600"
+            >客戶案例</a
+          >
+          <a
+            href="#contactUs"
+            class="nav-link block lg:inline-block hover:text-blue-600"
+            >聯絡我們</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <div id="mobile-menu-bg"></div>
+
+    <section
+      class="bg-[url(bg.jpg)] bg-fixed h-screen bg-cover relative bg-center flex flex-col justify-center items-center text-white text-center px-4 fade-section"
+    >
+      <div
+        class="border-t-2 border-r-2 border-l-2 w-full lg:max-w-1/2 lg:h-32 mb-4 size-16"
+      ></div>
+
+      <h1 class="text-5xl lg:text-6xl font-bold mb-4 fade-in text-shadow-lg">
+        從機電工程到空氣革命
+      </h1>
+      <p class="text-2xl lg:text-3xl fade-in delay-1 text-shadow-lg">
+        聖玉科技 × 藍光光觸媒 × 全空調系統適用
+      </p>
+
+      <div
+        class="border-b-2 border-r-2 border-l-2 w-full lg:max-w-1/2 lg:h-32 mt-4 size-16"
+      ></div>
+
+      <div
+        class="-lg absolute m-auto left-0 right-0 bottom-20 flex size-10 animate-bounce items-center justify-center rounded-full bg-white p-2 ring-1 ring-gray-900/5 dark:bg-white/5 dark:ring-white/20"
+      >
+        <svg
+          class="size-6 text-blue-300"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+      </div>
+    </section>
+
+    <section class="bg-[#000002]">
+      <div class="fade-section py-20 px-4">
+        <div class="container mx-auto lg:max-h-screen">
+          <section
+            class="text-white text-center font-bold text-2xl lg:text-3xl mt-8 mb-32"
+          >
+            <p class="leading-[1.5]">根源於工程，前進於創新</p>
+            <p class="leading-[1.5]">
+              聖玉科技由傳統五金與空調產業出發，結合新世代環保科技，致力於解決建築物內的空氣隱患問題
+            </p>
+            <p class="leading-[1.5]">
+              我們開發出能安裝於任意中央空調的藍光光觸媒模組，讓淨化從「<span
+                class="highlight"
+                >出風口</span
+              >」開始，改善每一口呼吸
+            </p>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section id="news" class="bg-gray-100 overflow-hidden">
+      <div class="fade-section py-20 px-4">
+        <div class="container mx-auto lg:max-h-screen">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl font-bold text-black">最新消息</h2>
+          </div>
+
+          <div class="newsBlock mx-auto lg:min-h-64">
+            <div>
+              <div class="swiper mySwiper col-span-7">
+                <div class="swiper-wrapper">
+                  <div
+                    class="swiper-slide p-8 border-gray-100 rounded-xl border bg-white"
+                  >
+                    <section class="w-full text-left">
+                      <time
+                        class="text-left inline-block p-2 text-sm bg-blue-100 text-blue-500 font-bold mb-8 rounded-sm"
+                        >2025/05/03</time
+                      >
+                      <h5 class="text-2xl font-bold text-left mb-8">
+                        室內空氣品質政策動態
+                      </h5>
+
+                      <div class="overflow-y-auto max-h-64">
+                        <p class="text-md text-left">
+                          關於室內空氣品質政策動態的內文，段落文字檢查．關於室內空氣品質政策動態的內文，段落文字檢查．關於室內空氣品質政策動態的內文關於室內空氣品質政策動態的內文關於室內空氣品質政策動態的內文關於室內空氣品質政策動態的內文
+                        </p>
+                      </div>
+                    </section>
+                  </div>
+                  <div
+                    class="swiper-slide p-8 border-gray-100 rounded-xl border bg-white"
+                  >
+                    <section class="w-full text-left">
+                      <time
+                        class="text-left inline-block p-2 text-sm bg-blue-100 text-blue-500 font-bold mb-8 rounded-sm"
+                        >2025/05/03</time
+                      >
+                      <h5 class="text-2xl font-bold text-left mb-8">
+                        室內空氣品質政策動態
+                      </h5>
+                      <div class="overflow-y-auto max-h-64">
+                        <p class="text-md text-left">
+                          關於室內空氣品質政策動態的內文，段落文字檢查．關於室內空氣品質政策動態的內文，段落文字檢查．關於室內空氣品質政策動態的內文關於室內空氣品質政策動態的內文關於室內空氣品質政策動態的內文關於室內空氣品質政策動態的內文
+                        </p>
+                      </div>
+                    </section>
+                  </div>
+                  <div
+                    class="swiper-slide p-8 border-gray-100 rounded-xl border bg-white"
+                  >
+                    <section class="w-full text-left">
+                      <time
+                        class="text-left inline-block p-2 text-sm bg-blue-100 text-blue-500 font-bold mb-8 rounded-sm"
+                        >2025/05/03</time
+                      >
+                      <h5 class="text-2xl font-bold text-left mb-8">
+                        室內空氣品質政策動態
+                      </h5>
+                      <div class="overflow-y-auto max-h-64">
+                        <p class="text-md text-left">
+                          關於室內空氣品質政策動態的內文，段落文字檢查．關於室內空氣品質政策動態的內文，段落文字檢查．關於室內空氣品質政策動態的內文關於室內空氣品質政策動態的內文關於室內空氣品質政策動態的內文關於室內空氣品質政策動態的內文
+                        </p>
+                      </div>
+                    </section>
+                  </div>
+
+                  <div
+                    class="swiper-slide p-8 border-gray-100 rounded-xl border bg-white"
+                  >
+                    <section class="w-full text-left">
+                      <time
+                        class="text-left inline-block p-2 text-sm bg-blue-100 text-blue-500 font-bold mb-8 rounded-sm"
+                        >2025/05/03</time
+                      >
+                      <h5 class="text-2xl font-bold text-left mb-8">
+                        室內空氣品質政策動態
+                      </h5>
+                      <div class="overflow-y-auto max-h-64">
+                        <p class="text-md text-left">
+                          關於室內空氣品質政策動態的內文，段落文字檢查．關於室內空氣品質政策動態的內文，段落文字檢查．關於室內空氣品質政策動態的內文關於室內空氣品質政策動態的內文關於室內空氣品質政策動態的內文關於室內空氣品質政策動態的內文
+                        </p>
+                      </div>
+                    </section>
+                  </div>
+                  <div
+                    class="swiper-slide p-8 border-gray-100 rounded-xl border bg-white"
+                  >
+                    <section class="w-full text-left">
+                      <time
+                        class="text-left inline-block p-2 text-sm bg-blue-100 text-blue-500 font-bold mb-8 rounded-sm"
+                        >2025/05/03</time
+                      >
+                      <h5 class="text-2xl font-bold text-left mb-8">
+                        室內空氣品質政策動態
+                      </h5>
+                      <div class="overflow-y-auto max-h-64">
+                        <p class="text-md text-left">
+                          關於室於室內空氣品質政策動態的內文，段落文字檢查．關於室內空氣品質政策動態的內文關於室內空氣品質政策動態的內文關於室內空氣品質政策動態的內文關於室內空氣品質政策動態的內文
+                        </p>
+                      </div>
+                    </section>
+                  </div>
+                  <div
+                    class="swiper-slide p-8 border-gray-100 rounded-xl border bg-white"
+                  >
+                    <section class="w-full text-left">
+                      <time
+                        class="text-left inline-block p-2 text-sm bg-blue-100 text-blue-500 font-bold mb-8 rounded-sm"
+                        >2025/05/03</time
+                      >
+                      <h5 class="text-2xl font-bold text-left mb-8">
+                        室內空氣品質政策動態
+                      </h5>
+                      <div class="overflow-y-auto max-h-64">
+                        <p class="text-md text-left">
+                          關於室內空氣品質政策動態的內文，段
+                        </p>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+                <div class="finance_shadow-left"></div>
+                <div class="finance_shadow-right"></div>
+              </div>
+
+              <div class="funcBlock col-s pan-3 mt-8">
+                <!-- <div class="swiper-button-next static!"></div>
+                <div class="swiper-button-prev static!"></div> -->
+                <div class="swiper-pagination static!"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="fade-section bg-white">
+      <div class="fade-section py-20 px-4">
+        <div class="container mx-auto">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl font-bold text-black">關於我們</h2>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
+            <section
+              class="text-center text-xl lg:text-2xl grid gap-2 font-bold text-black order-2 lg:order-1"
+            >
+              <p class="leading-[1.5]">聖玉科技由傳統五金與空調工程起家</p>
+              <p class="leading-[1.5]">專精於現場機電整合與大型空調系統安裝</p>
+              <p class="mt-8">在多年第一線經驗中</p>
+              <p class="leading-[1.5]">
+                我們發現空調出風口往往成為室內空氣污染源的關鍵節點。
+              </p>
+              <p class="leading-[1.5]">
+                因此，我們結合<span class="highlight"
+                  >環保材料科技與機電專業</span
+                >
+              </p>
+              <p class="leading-[1.5]">
+                開發出專為中央空調設計的<span class="highlight"
+                  >藍光光觸媒模組</span
+                >
+              </p>
+              <p class="leading-[1.5]">讓空氣淨化從最前端開始。</p>
+            </section>
+
+            <div class="order-1 lg:order-2">
+              <img src="about-us.jpg" alt="" class="rounded-3xl" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="fade-section bg-ing">
+      <div class="fade-section py-20 px-4">
+        <div class="container mx-auto">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl font-bold text-white">
+              三大核心優勢
+            </h2>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-16 lg:gap-8">
+            <div class="flex flex-col items-center text-center">
+              <div
+                class="thumb-container size-24 rounded-full bg-white p-5 mb-4"
+              >
+                <svg
+                  class="thumb-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M1 21h4V9H1v12zM23 10c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 2 7.59 
+               8.59C7.22 8.95 7 9.45 7 10v9c0 1.1.9 2 2 2h9c.78 0 1.48-.45 1.83-1.14l3.02-6.03c.1-.18.15-.39.15-.6v-1.23L23 10z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-2xl font-semibold text-white text-shadow-md">
+                全面相容各型中央空調
+              </h3>
+            </div>
+            <div class="flex flex-col items-center text-center">
+              <div
+                class="thumb-container size-24 rounded-full bg-white p-5 mb-4"
+              >
+                <svg
+                  class="thumb-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M1 21h4V9H1v12zM23 10c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 2 7.59 
+               8.59C7.22 8.95 7 9.45 7 10v9c0 1.1.9 2 2 2h9c.78 0 1.48-.45 1.83-1.14l3.02-6.03c.1-.18.15-.39.15-.6v-1.23L23 10z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-2xl font-semibold text-white text-shadow-md">
+                可見光啟動 × 零臭氧產生
+              </h3>
+            </div>
+            <div class="flex flex-col items-center text-center">
+              <div
+                class="thumb-container size-24 rounded-full bg-white p-5 mb-4"
+              >
+                <svg
+                  class="thumb-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M1 21h4V9H1v12zM23 10c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 2 7.59 
+               8.59C7.22 8.95 7 9.45 7 10v9c0 1.1.9 2 2 2h9c.78 0 1.48-.45 1.83-1.14l3.02-6.03c.1-.18.15-.39.15-.6v-1.23L23 10z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-2xl font-semibold text-white text-shadow-md">
+                專為大型建築場域而生
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="product" class="fade-section">
+      <div class="fade-section py-20 px-4">
+        <div class="container mx-auto">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl font-bold text-black">產品介紹</h2>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="">
+              <div class="swiper productSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="p1.png"
+                      alt="產品圖示"
+                      class="w-full max-w-[500px] mx-auto"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="p2.png"
+                      alt="產品圖示"
+                      class="w-full max-w-[500px] mx-auto"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-left">
+              <h5 class="text-2xl font-bold">藍光光觸媒模組</h5>
+              <p class="text-xl mb-8">中央空調出風口專用淨化裝置</p>
+              <ol class="list-disc list-outside pl-[20px]">
+                <li>420nm~430nm藍光光源</li>
+                <li>安全、無二次汙染、降解有害物質及異味分子</li>
+                <li>310*310*220mm，1.8公斤輕巧尺寸適合任何空間安裝</li>
+              </ol>
+              <div class="h-1 border-b-1 border-gray-200 mt-4 mb-4"></div>
+              <ol>
+                <li>特點：可見光啟動、無臭氧、不需濾材、安裝容易</li>
+                <li>適用場所：醫院、辦公室、餐廳、學校、公共空間</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="applicationFields" class="fade-section bg-gray-100">
+      <div class="fade-section py-20 px-4">
+        <div class="container mx-auto">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl font-bold text-black">
+              應用場域與解決方案
+            </h2>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div class="rounded-tl-xl rounded-tr-xl overflow-hidden">
+              <div class="overflow-hidden max-h-64">
+                <img
+                  src="1.jpg"
+                  class="mx-auto rounded-tl-xl rounded-tr-xl transform transition hover:scale-105"
+                  alt="辦公空間"
+                />
+              </div>
+              <section class="p-4 bg-white rounded-br-xl rounded-bl-xl">
+                <h4 class="text-xl font-semibold text-blue-500 mb-1">
+                  辦公空間
+                </h4>
+                <p class="text-gray-700">員工健康守護，減少病菌交叉感染</p>
+              </section>
+            </div>
+            <div class="rounded-tl-xl rounded-tr-xl overflow-hidden">
+              <div class="overflow-hidden max-h-64">
+                <img
+                  src="2.jpg"
+                  class="mx-auto rounded-tl-xl rounded-tr-xl transform transition hover:scale-105"
+                  alt="醫療環境"
+                />
+              </div>
+              <section class="p-4 bg-white rounded-br-xl rounded-bl-xl">
+                <h4 class="text-xl font-semibold text-blue-500 mb-1">
+                  醫療環境
+                </h4>
+                <p class="text-gray-700">
+                  手術室外圍、診間內空氣分解TVOC與細菌
+                </p>
+              </section>
+            </div>
+            <div class="rounded-tl-xl rounded-tr-xl overflow-hidden">
+              <div class="overflow-hidden max-h-64">
+                <img
+                  src="3.jpg"
+                  class="mx-auto rounded-tl-xl rounded-tr-xl transform transition hover:scale-105"
+                  alt="辦公空間"
+                />
+              </div>
+              <section class="p-4 bg-white rounded-br-xl rounded-bl-xl">
+                <h4 class="text-xl font-semibold text-blue-500 mb-1">
+                  教育場域
+                </h4>
+                <p class="text-gray-700">防疫常態化下的空氣品質提升策略</p>
+              </section>
+            </div>
+            <div class="rounded-tl-xl rounded-tr-xl overflow-hidden">
+              <div class="overflow-hidden max-h-64">
+                <img
+                  src="4.jpg"
+                  class="mx-auto rounded-tl-xl rounded-tr-xl transform transition hover:scale-105"
+                  alt="辦公空間"
+                />
+              </div>
+              <section class="p-4 bg-white rounded-br-xl rounded-bl-xl">
+                <h4 class="text-xl font-semibold text-blue-500 mb-1">
+                  長照中心
+                </h4>
+                <p class="text-gray-700">降低異味與病毒停留風險</p>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="customerCases" class="fade-section bg-gray-100">
+      <div class="fade-section py-20 px-4">
+        <div class="container mx-auto">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl font-bold text-black">客戶案例</h2>
+          </div>
+
+          <div class="swiper customerCasesSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="實際案例-1.jpg"
+                  alt="實際案例-1"
+                  class="object-cover rounded-lg"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="實際案例-2.jpg"
+                  alt="實際案例-2"
+                  class="object-cover rounded-lg"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="實際案例-3.jpg"
+                  alt="實際案例-3"
+                  class="object-cover rounded-lg"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="實際案例-4.jpg"
+                  alt="實際案例-4"
+                  class="object-cover rounded-lg"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="實際案例-5.jpg"
+                  alt="實際案例-5"
+                  class="object-cover rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="contactUs" class="fade-section">
+      <div class="fade-section py-20 px-4">
+        <div class="container mx-auto">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl font-bold text-black">聯絡我們</h2>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-20">
+            <div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.902357264567!2d121.XXXXXX!3d25.0XXXXX!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z5paw5YyX5biC!5e0!3m2!1szh-TW!2stw!4v1612345678901"
+                width="100%"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="text-center md:text-left py-2">
+              <h5 class="font-bold mb-3 text-xl">聖玉科技工程有限公司</h5>
+              <div class="flex items-center justify-center md:justify-start">
+                <svg
+                  class="w-5 h-5 text-blue-500 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M8 7V3m8 4V3m-9 4h10M5 21h14a2 2 0 002-2V7H3v12a2 2 0 002 2z"
+                  ></path>
+                </svg>
+                <p>服務時間｜週一至週五 9:00–18:00</p>
+              </div>
+              <div class="flex items-center justify-center md:justify-start">
+                <svg
+                  class="w-5 h-5 text-blue-500 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 5a2 2 0 012-2h2.28a1 1 0 01.94.66l1.38 4.14a1 1 0 01-.28 1.06l-1.52 1.52a11.05 11.05 0 005.06 5.06l1.52-1.52a1 1 0 011.06-.28l4.14 1.38a1 1 0 01.66.94V19a2 2 0 01-2 2h-1C9.82 21 3 14.18 3 6V5z"
+                  ></path>
+                </svg>
+                <p>客服專線｜(02) XXX-XXXX</p>
+              </div>
+              <div class="flex items-center justify-center md:justify-start">
+                <svg
+                  class="w-5 h-5 text-blue-500 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4 4h16c1.1 0 2 .9 2 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M22 6l-10 7L2 6"
+                  />
+                </svg>
+                <p>Email｜service@xxxxx.com.tw</p>
+              </div>
+              <div class="flex items-center justify-center md:justify-start">
+                <svg
+                  class="w-5 h-5 text-blue-500 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 11c1.1046 0 2-.8954 2-2s-.8954-2-2-2-2 .8954-2 2 .8954 2 2 2zm0 10s-7-6.5-7-11a7 7 0 0114 0c0 4.5-7 11-7 11z"
+                  />
+                </svg>
+                <p>地址｜台灣XX市XX區XXX路X段XX號</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-black">
+      <div class="container mx-auto text-center py-10">
+        <p class="text-center text-white">Copyright © 2020 LUXJADE Inc.</p>
+        <p class="text-center text-white mt-1">
+          Powered by
+          <a href="jethome.site" class="text-blue-500">Jethome Inc.</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="global.js"></script>
+  </body>
+</html>
